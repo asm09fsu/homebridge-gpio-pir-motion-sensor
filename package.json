@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-non-sudo-pir-motion-sensor",
+  "name": "homebridge-gpio-pir-motion-sensor",
   "version": "1.0.0",
   "description": "Hombridge plugin for Motion Sensor that does not require sudo",
   "main": "index.js",
