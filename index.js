@@ -6,7 +6,7 @@ let Service, Characteristic;
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-motion-sensor', 'Motion Sensor', MotionSensor);
+  homebridge.registerAccessory('homebridge-gpio-pir-motion-sensor', 'Motion Sensor', MotionSensor);
 };
 
 class MotionSensor {
@@ -26,7 +26,7 @@ class MotionSensor {
     const informationService = new Service.AccessoryInformation();
 
     informationService
-      .setCharacteristic(Characteristic.Manufacturer, 'Encore Dev Labs')
+      .setCharacteristic(Characteristic.Manufacturer, 'Alex Muller')
       .setCharacteristic(Characteristic.Model, 'Pi Motion Sensor')
       .setCharacteristic(Characteristic.SerialNumber, 'Raspberry Pi');
 
